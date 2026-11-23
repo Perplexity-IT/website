@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { EMAIL, FAQS, MAILTO, PROCESS_STEPS, PROJECTS, SERVICES } from "../lib/site";
+import { HERO_SRC } from "../lib/images";
 import PlanCard from "../components/PlanCard";
 import ProjectCard from "../components/ProjectCard";
 import FAQ from "../components/FAQ";
@@ -34,7 +35,10 @@ export default function Home() {
       />
 
       {/* ---------- hero ---------- */}
-      <section className="hero hero-premium">
+      <section
+        className="hero hero-premium"
+        style={{ backgroundImage: `url(${HERO_SRC})` }}
+      >
         <div className="container">
           <p className="hero-pill">
             <span className="hero-pill-dot" aria-hidden="true" />

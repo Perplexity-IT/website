@@ -471,31 +471,30 @@ img {
 }
 
 /* ---------- hero ----------
-   Pure-CSS hero: deep navy gradient with radial glows and a faint grid
-   texture. No background photo — the old brand cover image had its logo
-   and service list baked in, and that text bled through behind the
-   headline. */
+   Photo hero: the Salt Lake valley (Wasatch cover, cropped to the
+   mountains + downtown skyline with the baked-in logo/text cut out)
+   under a dark navy overlay — darkest on the left where the headline
+   sits, lighter on the right so the valley stays visible. The image
+   itself is set inline from page.jsx (HERO_SRC data URI). */
 .hero {
   position: relative;
   overflow: hidden;
   color: #fff;
-  background:
-    radial-gradient(1100px 520px at 88% -12%, rgba(14, 109, 181, 0.55), rgba(14, 109, 181, 0) 62%),
-    radial-gradient(900px 500px at -8% 115%, rgba(0, 67, 131, 0.85), rgba(0, 67, 131, 0) 58%),
-    linear-gradient(135deg, #00142b 0%, #00264d 48%, #004383 100%);
+  background-color: #00142b;
+  background-size: cover;
+  background-position: center 60%;
+  background-repeat: no-repeat;
 }
 
-/* Faint grid texture, faded toward the edges so text stays crisp. */
+/* Dark navy overlay: heavy on the left for headline contrast, lighter
+   on the right so the valley shows through. */
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 56px 56px;
-  -webkit-mask-image: radial-gradient(ellipse 90% 85% at 50% 0%, #000 25%, transparent 78%);
-  mask-image: radial-gradient(ellipse 90% 85% at 50% 0%, #000 25%, transparent 78%);
+  background:
+    linear-gradient(90deg, rgba(0, 16, 34, 0.90) 0%, rgba(0, 16, 34, 0.74) 40%, rgba(0, 16, 34, 0.50) 70%, rgba(0, 16, 34, 0.34) 100%),
+    linear-gradient(180deg, rgba(0, 16, 34, 0.30) 0%, rgba(0, 16, 34, 0.08) 35%, rgba(0, 16, 34, 0.52) 100%);
   pointer-events: none;
 }
 
@@ -946,6 +945,14 @@ img {
   .hero .container {
     padding-top: 64px;
     padding-bottom: 64px;
+  }
+
+  /* On narrow screens the headline spans the full width, so the
+     overlay stays darker across the whole hero. */
+  .hero::before {
+    background:
+      linear-gradient(90deg, rgba(0, 16, 34, 0.84) 0%, rgba(0, 16, 34, 0.74) 50%, rgba(0, 16, 34, 0.64) 100%),
+      linear-gradient(180deg, rgba(0, 16, 34, 0.30) 0%, rgba(0, 16, 34, 0.10) 35%, rgba(0, 16, 34, 0.52) 100%);
   }
 
   .section {
