@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://perplexityit.com/sitemap.xml
