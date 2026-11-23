@@ -80,6 +80,7 @@ const SERVICES_DETAIL = [
       "Hands off to you whenever a question is beyond it",
       "Lives on your website — no app for customers to install",
     ],
+    note: "Try it — the chat button at the bottom left of this page is a live demo of the chatbot we build for businesses.",
   },
   {
     id: "ai-phone-receptionist",
@@ -122,6 +123,7 @@ export default function Services() {
               <li key={pt}>{pt}</li>
             ))}
           </ul>
+          {s.note && <p className="service-note">{s.note}</p>}
         </section>
       ))}
 

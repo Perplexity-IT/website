@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import StickyCTA from "../components/StickyCTA";
+import ChatWidget from "../components/ChatWidget";
 import { MARK_SRC } from "../lib/images";
 
 // Self-hosted at build time by next/font — no runtime Google Fonts request.
@@ -108,6 +109,7 @@ export default function RootLayout({ children }) {
         <main id="main">{children}</main>
         <Footer />
         <StickyCTA />
+        <ChatWidget />
       </body>
     </html>
   );

@@ -28,6 +28,11 @@ npm run build   # static export in out/
   pricing on the site by design — the CTA is "book a call" (mailto).
 - No client counts, ratings, or years-in-business claims anywhere on the
   site — only real work is shown.
+- Demo chatbot (`components/ChatWidget.jsx`, brain in
+  `lib/chatbot-knowledge.js`): a floating widget on every page, bottom-left.
+  Rule-based, zero cost, no API key — it answers only from facts already on
+  the site and captures leads via the same mailto composer as the contact
+  form. It is itself the demo of the AI Chatbot service.
 - The contact form (`components/ContactForm.jsx`) has no backend: it composes
   a prefilled mailto in the visitor's own mail app. To switch to direct
   submission, set `FORM_ENDPOINT` in that file to a Formspree/FormSubmit URL
