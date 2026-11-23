@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { COVER_SRC } from "../lib/images";
 import { EMAIL, FAQS, MAILTO, PROCESS_STEPS, PROJECTS, SERVICES } from "../lib/site";
 import PlanCard from "../components/PlanCard";
 import ProjectCard from "../components/ProjectCard";
@@ -35,14 +34,11 @@ export default function Home() {
       />
 
       {/* ---------- hero ---------- */}
-      <section
-        className="hero hero-premium"
-        style={{ backgroundImage: `url(${COVER_SRC})` }}
-      >
+      <section className="hero hero-premium">
         <div className="container">
           <p className="hero-pill">
             <span className="hero-pill-dot" aria-hidden="true" />
-            One-person company · Salt Lake City
+            Salt Lake City · Serving clients worldwide
           </p>
           <h1>
             Get found first —{" "}

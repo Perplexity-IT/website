@@ -1,6 +1,4 @@
-import { PROJECTS } from "../../lib/site";
-import ProjectCard from "../../components/ProjectCard";
-import Reveal from "../../components/Reveal";
+import WorkAccordion from "../../components/WorkAccordion";
 import BreadcrumbJsonLd from "../../components/BreadcrumbJsonLd";
 
 export const metadata = {
@@ -25,18 +23,13 @@ export default function Work() {
         <p>
           Before selling websites, I built my own — apps, games, and content
           platforms people actually use. This is what &ldquo;I build
-          things&rdquo; looks like in practice.
+          things&rdquo; looks like in practice. Pick a category below to see
+          what&apos;s in it.
         </p>
       </div>
 
       <section className="section" style={{ paddingTop: 40 }}>
-        <div className="card-grid two">
-          {PROJECTS.map((p, i) => (
-            <Reveal key={p.title} delay={(i % 2) * 80}>
-              <ProjectCard project={p} />
-            </Reveal>
-          ))}
-        </div>
+        <WorkAccordion />
       </section>
     </div>
   );

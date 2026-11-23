@@ -470,26 +470,51 @@ img {
   justify-content: center;
 }
 
-/* ---------- hero ---------- */
+/* ---------- hero ----------
+   Pure-CSS hero: deep navy gradient with radial glows and a faint grid
+   texture. No background photo — the old brand cover image had its logo
+   and service list baked in, and that text bled through behind the
+   headline. */
 .hero {
   position: relative;
-  background-color: var(--blue);
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
   color: #fff;
+  background:
+    radial-gradient(1100px 520px at 88% -12%, rgba(14, 109, 181, 0.55), rgba(14, 109, 181, 0) 62%),
+    radial-gradient(900px 500px at -8% 115%, rgba(0, 67, 131, 0.85), rgba(0, 67, 131, 0) 58%),
+    linear-gradient(135deg, #00142b 0%, #00264d 48%, #004383 100%);
 }
 
+/* Faint grid texture, faded toward the edges so text stays crisp. */
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(0, 30, 60, 0.88) 0%, rgba(0, 30, 60, 0.62) 55%, rgba(0, 30, 60, 0.35) 100%);
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 56px 56px;
+  -webkit-mask-image: radial-gradient(ellipse 90% 85% at 50% 0%, #000 25%, transparent 78%);
+  mask-image: radial-gradient(ellipse 90% 85% at 50% 0%, #000 25%, transparent 78%);
+  pointer-events: none;
+}
+
+/* Soft highlight line along the bottom edge. */
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(168, 212, 240, 0.55), transparent);
+  pointer-events: none;
 }
 
 .hero .container {
   position: relative;
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   max-width: var(--max);
 }
 
@@ -503,19 +528,20 @@ img {
 }
 
 .hero h1 {
-  margin: 0 0 18px;
-  font-size: clamp(34px, 5.4vw, 56px);
-  line-height: 1.08;
-  letter-spacing: -0.01em;
-  max-width: 720px;
+  margin: 0 0 20px;
+  font-size: clamp(38px, 5.8vw, 62px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  max-width: 760px;
 }
 
 .hero p.lede {
-  margin: 0 0 30px;
-  font-size: clamp(17px, 2.2vw, 20px);
-  line-height: 1.55;
-  color: #e6eef5;
-  max-width: 620px;
+  margin: 0 0 34px;
+  font-size: clamp(17.5px, 2.2vw, 20.5px);
+  line-height: 1.62;
+  color: #dcebf7;
+  max-width: 660px;
 }
 
 .hero-ctas {
@@ -525,8 +551,12 @@ img {
 }
 
 .hero-ctas .btn {
-  padding: 13px 24px;
+  padding: 14px 26px;
   font-size: 16px;
+}
+
+.hero-ctas .btn-white {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28);
 }
 
 /* ---------- sections ---------- */
@@ -981,8 +1011,8 @@ img {
 
 /* ---------- premium hero ---------- */
 .hero-premium .container {
-  padding-top: 112px;
-  padding-bottom: 112px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .hero-pill {
@@ -994,11 +1024,13 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #d6e7f5;
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.28);
   border-radius: 999px;
-  padding: 7px 14px;
-  margin: 0 0 22px;
-  background: rgba(0, 30, 60, 0.35);
+  padding: 8px 15px;
+  margin: 0 0 26px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
 .hero-pill-dot {
@@ -1013,10 +1045,19 @@ img {
   color: #a8d4f0;
 }
 
+@supports ((background-clip: text) or (-webkit-background-clip: text)) {
+  .hero-accent {
+    background: linear-gradient(90deg, #8fd0ff 0%, #c4e3fa 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
 .hero-note {
-  margin: 24px 0 0;
+  margin: 28px 0 0;
   font-size: 14.5px;
-  color: #c9dbe9;
+  color: #bcd8ee;
 }
 
 /* ---------- trust strip ---------- */
@@ -1341,6 +1382,135 @@ img {
   color: var(--muted);
   font-size: 16px;
   line-height: 1.6;
+}
+
+/* ---------- work categories accordion ---------- */
+.work-cat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.work-cat {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  overflow: hidden;
+}
+
+.work-cat.open {
+  border-color: #c9d8e6;
+}
+
+.work-cat-head {
+  margin: 0;
+}
+
+.work-cat-head button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 22px;
+  background: none;
+  border: 0;
+  font: inherit;
+  text-align: left;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.work-cat-head button:hover {
+  background: var(--surface);
+}
+
+.work-cat.open .work-cat-head button:hover {
+  background: none;
+}
+
+.work-cat-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.work-cat-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.work-cat-count {
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--blue);
+  background: var(--blue-soft);
+  border-radius: 999px;
+  padding: 3px 10px;
+  white-space: nowrap;
+}
+
+.work-cat-blurb {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.work-cat-chev {
+  color: var(--blue);
+  font-size: 17px;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.work-cat.open .work-cat-chev {
+  transform: rotate(180deg);
+}
+
+.work-cat-wrap {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
+  overflow: hidden;
+}
+
+.work-cat.open .work-cat-wrap {
+  grid-template-rows: 1fr;
+}
+
+/* No padding on the grid item itself (same iOS Safari lesson as the FAQ:
+   a padded item doesn't fully collapse in a 0fr row). Padding lives on
+   the body inside the clipped wrapper. */
+.work-cat-inner {
+  overflow: hidden;
+  min-height: 0;
+}
+
+.work-cat-body {
+  padding: 20px 22px 24px;
+  border-top: 1px solid var(--line);
+}
+
+.work-cat-note {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 15.5px;
+}
+
+@media (max-width: 760px) {
+  .work-cat-head button {
+    padding: 16px 18px;
+  }
+
+  .work-cat-body {
+    padding: 16px 18px 20px;
+  }
 }
 
 /* ---------- contact layout + form ---------- */
