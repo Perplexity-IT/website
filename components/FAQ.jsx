@@ -33,7 +33,9 @@ export default function FAQ() {
               role="region"
               aria-labelledby={`faq-button-${i}`}
             >
-              <p className="faq-a">{f.a}</p>
+              <div className="faq-a-inner">
+                <p className="faq-a">{f.a}</p>
+              </div>
             </div>
           </div>
         );

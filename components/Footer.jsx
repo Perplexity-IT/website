@@ -16,9 +16,10 @@ export default function Footer() {
               height={44}
             />
             <p>
-              Perplexity IT — web development, SEO, Meta ads, Google ads, AI
-              chatbots, AI phone receptionists, and IT services for
-              businesses in Salt Lake County, Utah.
+              Perplexity IT — web development, SEO, Meta ads, Google ads,
+              email migration, AI chatbots, AI phone receptionists, and IT
+              services for businesses and individuals worldwide, with on-site IT in Salt
+              Lake County, Utah.
             </p>
             <p>
               Built and run by{" "}
@@ -66,13 +67,13 @@ export default function Footer() {
                 <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
               </li>
               <li>Salt Lake City, UT</li>
-              <li>Serving Salt Lake County</li>
+              <li>Serving clients worldwide</li>
             </ul>
           </div>
         </div>
         <div className="footer-bottom">
           <span>© 2026 Perplexity IT. All rights reserved.</span>
-          <span>Last updated: November 22, 2026</span>
+          <span>Last updated: November 23, 2026</span>
           <span>Built in Salt Lake City, Utah.</span>
         </div>
       </div>

@@ -5,7 +5,7 @@ import BreadcrumbJsonLd from "../../components/BreadcrumbJsonLd";
 export const metadata = {
   title: "Contact — Perplexity IT",
   description:
-    "Contact Perplexity IT in Salt Lake City: email nabin@perplexityit.com to book a call about web development, SEO, Meta ads, Google ads, IT services, an AI chatbot, or an AI phone receptionist.",
+    "Contact Perplexity IT in Salt Lake City: email nabin@perplexityit.com to book a call about web development, SEO, Meta ads, Google ads, email migration, IT services, an AI chatbot, or an AI phone receptionist.",
   alternates: { canonical: "/contact" },
 };
 
@@ -22,9 +22,10 @@ export default function Contact() {
         <p className="eyebrow">Contact</p>
         <h1>Let&apos;s talk</h1>
         <p>
-          Tell me about your business and what you need — a website, better
+          Tell me what you need — a website, better
           rankings, ads that bring in leads, an AI chatbot or phone
-          receptionist, or IT help. I reply personally, usually the same day.
+          receptionist, email migration, or IT help. I reply personally,
+          usually the same day.
         </p>
       </div>
 
@@ -50,8 +51,8 @@ export default function Contact() {
               </a>
               <h2 style={{ marginTop: 32 }}>Where</h2>
               <p>
-                Salt Lake City, Utah — serving businesses across Salt Lake
-                County.
+                Salt Lake City, Utah — working with businesses and individuals worldwide.
+                On-site IT support is available in Salt Lake County.
               </p>
               <h2 style={{ marginTop: 32 }}>What happens next</h2>
               <p>

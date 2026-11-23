@@ -5,7 +5,7 @@ import BreadcrumbJsonLd from "../../components/BreadcrumbJsonLd";
 export const metadata = {
   title: "About Nabin Pokhrel — Perplexity IT",
   description:
-    "Nabin Pokhrel is a systems engineer and builder in Salt Lake City with 7+ years in IT — Microsoft 365, Azure, Entra ID — now building websites and ad campaigns for local businesses.",
+    "Nabin Pokhrel is a systems engineer and builder in Salt Lake City with 7+ years in IT — Microsoft 365, Azure, Entra ID — now building websites, ad campaigns, and AI services for businesses and individuals worldwide.",
   alternates: { canonical: "/about" },
 };
 

@@ -54,12 +54,12 @@ export default function Header() {
       <div className="utility-bar">
         <div className="container">
           <span className="util-left">
-            <span>Serving Salt Lake County, UT</span>
+            <span>Based in Salt Lake City · Working worldwide</span>
             <span className="util-dot hide-mobile" aria-hidden="true">
               •
             </span>
             <span className="hide-mobile">
-              Websites, SEO, ads, AI &amp; IT — one local partner
+              Websites, SEO, ads, AI &amp; IT — one partner
             </span>
           </span>
           <span className="util-right">

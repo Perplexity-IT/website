@@ -19,11 +19,11 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Perplexity IT | Websites, SEO, Ads, AI & IT Services in Salt Lake County",
+    default: "Perplexity IT | Websites, SEO, Ads, AI & IT Services — Salt Lake City",
     template: "%s | Perplexity IT",
   },
   description:
-    "Perplexity IT builds fast websites, runs local SEO and Meta + Google ad campaigns, sets up AI chatbots and AI phone receptionists, and provides managed IT services for businesses in Salt Lake County, Utah.",
+    "Perplexity IT builds fast websites, runs SEO and Meta + Google ad campaigns, migrates email to Microsoft 365, and sets up AI chatbots and AI phone receptionists for businesses and individuals worldwide — with on-site IT services in Salt Lake County, Utah.",
   keywords: [
     "web development Salt Lake City",
     "SEO Salt Lake County",
@@ -31,13 +31,15 @@ export const metadata = {
     "Google ads Salt Lake City",
     "IT services Salt Lake County",
     "managed IT Utah",
+    "email migration Microsoft 365",
+    "email migration services",
     "AI chatbot for small business",
     "AI phone receptionist Salt Lake City",
   ],
   openGraph: {
     title: "Perplexity IT | Websites, SEO, Ads, AI & IT Services",
     description:
-      "Web development, SEO, Meta ads, Google ads, AI chatbot and AI phone receptionist setup, and IT services for Salt Lake County businesses — from Nabin Pokhrel, Salt Lake City.",
+      "Web development, SEO, Meta ads, Google ads, email migration, AI chatbot and AI phone receptionist setup for businesses and individuals worldwide — and on-site IT services in Salt Lake County — from Nabin Pokhrel, Salt Lake City.",
     url: SITE_URL,
     siteName: "Perplexity IT",
     type: "website",
@@ -54,6 +56,7 @@ const SERVICE_NAMES = [
   "Meta Ads",
   "Google Ads",
   "IT Services",
+  "Email Migration",
   "AI Chatbot",
   "AI Phone Receptionist",
 ];
@@ -63,13 +66,16 @@ const jsonLd = {
   "@type": "LocalBusiness",
   name: "Perplexity IT",
   description:
-    "Web development, SEO, Meta ads, Google ads, AI chatbot and AI phone receptionist setup, and IT services for businesses in Salt Lake County, Utah.",
+    "Web development, SEO, Meta ads, Google ads, email migration, AI chatbot and AI phone receptionist setup for businesses and individuals worldwide, and on-site IT services in Salt Lake County, Utah.",
   url: SITE_URL,
   email: "nabin@perplexityit.com",
-  areaServed: {
-    "@type": "AdministrativeArea",
-    name: "Salt Lake County, UT",
-  },
+  areaServed: [
+    {
+      "@type": "AdministrativeArea",
+      name: "Salt Lake County, UT",
+    },
+    "Worldwide",
+  ],
   address: {
     "@type": "PostalAddress",
     addressLocality: "Salt Lake City",
@@ -99,7 +105,7 @@ const orgJsonLd = {
   "@type": "Organization",
   name: "Perplexity IT",
   description:
-    "A one-person company in Salt Lake City, UT: web development, SEO, Meta ads, Google ads, IT services, AI chatbots, and AI phone receptionists for small businesses in Salt Lake County.",
+    "A one-person company in Salt Lake City, UT: web development, SEO, Meta ads, Google ads, email migration, IT services, AI chatbots, and AI phone receptionists — serving businesses and individuals worldwide, with on-site IT in Salt Lake County.",
   url: SITE_URL,
   email: "nabin@perplexityit.com",
   founder: {

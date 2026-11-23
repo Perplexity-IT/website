@@ -85,7 +85,7 @@ export default function ContactForm() {
       <div className="form-row">
         <label>
           Email
-          <input type="email" name="email" required autoComplete="email" placeholder="you@yourbusiness.com" />
+          <input type="email" name="email" required autoComplete="email" placeholder="you@example.com" />
         </label>
         <label>
           Service needed

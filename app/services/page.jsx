@@ -2,9 +2,9 @@ import { MAILTO } from "../../lib/site";
 import BreadcrumbJsonLd from "../../components/BreadcrumbJsonLd";
 
 export const metadata = {
-  title: "Services — Web Development, SEO, Meta Ads, Google Ads, IT Services, AI Chatbot & AI Phone Receptionist",
+  title: "Services — Web Development, SEO, Meta Ads, Google Ads, IT Services, Email Migration, AI Chatbot & AI Phone Receptionist",
   description:
-    "Perplexity IT services for Salt Lake County businesses: fast websites, local SEO, Meta and Google ad campaigns, managed IT services, an AI chatbot for your website, and an AI phone receptionist that answers every call.",
+    "Perplexity IT services for businesses and individuals worldwide: fast websites, SEO, Meta and Google ad campaigns, email migration to Microsoft 365, an AI chatbot for your website, and an AI phone receptionist that answers every call. On-site IT services in Salt Lake County, Utah.",
   alternates: { canonical: "/services" },
 };
 
@@ -16,7 +16,7 @@ const SERVICES_DETAIL = [
     intro:
       "Fast, modern websites built with current tools (Next.js, Vercel) — designed to load quickly, rank well, and turn visitors into customers.",
     points: [
-      "Business websites, landing pages, and web apps",
+      "Business websites, personal sites, landing pages, and web apps",
       "Mobile-first design — most of your customers are on phones",
       "Built for speed: fast load times help rankings and conversions",
       "Easy to update, and you own everything",
@@ -66,13 +66,26 @@ const SERVICES_DETAIL = [
     title: "IT Services",
     question: "What do Perplexity IT's IT services cover?",
     intro:
-      "Managed IT for small businesses, from a systems engineer with 7+ years running Microsoft 365, Azure, and Entra ID for 1,000+ users — now available to local companies.",
+      "Managed IT for small businesses, from a systems engineer with 7+ years running Microsoft 365, Azure, and Entra ID for 1,000+ users — available on-site to companies in Salt Lake County.",
     points: [
       "Microsoft 365 setup, migrations, and day-to-day administration",
       "Entra ID, Conditional Access, MFA, and identity security",
       "Intune device management and Windows Autopilot",
       "Azure VMs, storage, and networking",
       "Practical, plain-English support — no ticket black holes",
+    ],
+  },
+  {
+    id: "email-migration",
+    title: "Email Migration",
+    question: "Can Perplexity IT move our email to Microsoft 365?",
+    intro:
+      "Move your email to Microsoft 365 without losing a single message — 500+ mailboxes migrated to Exchange Online with zero data loss, planned around your schedule.",
+    points: [
+      "Mailboxes, calendars, contacts, and shared mailboxes moved over",
+      "Planned cutover — your team keeps working through the move",
+      "Outlook and phone setup for every user after the switch",
+      "Done fully remotely — available to businesses and individuals anywhere",
     ],
   },
   {
@@ -88,7 +101,7 @@ const SERVICES_DETAIL = [
       "Hands off to you whenever a question is beyond it",
       "Lives on your website — no app for customers to install",
     ],
-    note: "Try it — the chat button at the bottom left of this page is a live demo of the chatbot we build for businesses.",
+    note: "Try it — the chat button at the bottom left of this page is a live demo of the chatbot we build for businesses and individuals.",
   },
   {
     id: "ai-phone-receptionist",
@@ -119,7 +132,7 @@ export default function Services() {
         <p className="eyebrow">Services</p>
         <h1>What we do</h1>
         <p>
-          Seven services, one person accountable. Every engagement starts with
+          Eight services, one person accountable. Every engagement starts with
           a conversation — book a call and we&apos;ll scope it together.
         </p>
       </div>
@@ -194,7 +207,7 @@ export default function Services() {
 
       <section className="section" style={{ paddingTop: 32 }}>
         <div className="contact-card">
-          <h2>Need one of these — or all seven?</h2>
+          <h2>Need one of these — or all eight?</h2>
           <p>
             Email me with what you&apos;re looking for and I&apos;ll reply
             with next steps and a flat quote.
@@ -203,7 +216,7 @@ export default function Services() {
             Book a call &rarr;
           </a>
         </div>
-        <p className="last-updated">Last updated: November 22, 2026</p>
+        <p className="last-updated">Last updated: November 23, 2026</p>
       </section>
     </div>
   );

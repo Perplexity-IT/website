@@ -98,6 +98,12 @@ const PATHS = {
       <path d="M6.8 9h.01M9 6.8h.01M11.2 9h.01" />
     </>
   ),
+  mail: (
+    <>
+      <rect x="2" y="4" width="20" height="16" rx="2" />
+      <path d="m22 7-10 6L2 7" />
+    </>
+  ),
 };
 
 export default function Icon({ name, size = 24, className = "" }) {

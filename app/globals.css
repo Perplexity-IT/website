@@ -1320,15 +1320,22 @@ img {
   display: grid;
   grid-template-rows: 0fr;
   transition: grid-template-rows 0.3s ease;
+  overflow: hidden;
 }
 
 .faq-item.open .faq-a-wrap {
   grid-template-rows: 1fr;
 }
 
-.faq-a {
+/* The grid item must carry NO padding: on iOS Safari the 0fr row does not
+   fully collapse a padded item, so the answer's first line leaked out of
+   closed cards. Padding lives on the <p> inside this clipped wrapper. */
+.faq-a-inner {
   overflow: hidden;
   min-height: 0;
+}
+
+.faq-a {
   margin: 0;
   padding: 0 20px 18px;
   color: var(--muted);

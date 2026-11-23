@@ -8,9 +8,9 @@ import Reveal from "../components/Reveal";
 import Icon from "../components/Icon";
 
 export const metadata = {
-  title: "Perplexity IT | Websites, SEO, Ads, AI & IT Services in Salt Lake County",
+  title: "Perplexity IT | Websites, SEO, Ads, AI & IT Services — Salt Lake City",
   description:
-    "Perplexity IT builds fast websites, runs local SEO and Meta + Google ad campaigns, sets up AI chatbots and AI phone receptionists, and provides managed IT services for businesses in Salt Lake County, Utah.",
+    "Perplexity IT builds fast websites, runs SEO and Meta + Google ad campaigns, migrates email to Microsoft 365, and sets up AI chatbots and AI phone receptionists for businesses and individuals worldwide — with on-site IT services in Salt Lake County, Utah.",
   alternates: { canonical: "/" },
 };
 
@@ -45,15 +45,15 @@ export default function Home() {
             One-person company · Salt Lake City
           </p>
           <h1>
-            Your business, found first —{" "}
+            Get found first —{" "}
             <span className="hero-accent">online and on Google.</span>
           </h1>
           <p className="lede">
-            Perplexity IT builds fast websites, runs local SEO and Meta +
-            Google ad campaigns, sets up AI chatbots and AI phone
-            receptionists, and handles managed IT for Salt Lake County
-            businesses — all by Nabin Pokhrel, a systems engineer who ships
-            real products.
+            Perplexity IT builds fast websites, runs SEO and Meta + Google
+            ad campaigns, migrates email to Microsoft 365, and sets up AI
+            chatbots and AI phone receptionists for businesses and individuals anywhere —
+            with on-site managed IT for Salt Lake County businesses — all
+            by Nabin Pokhrel, a systems engineer who ships real products.
           </p>
           <div className="hero-ctas">
             <a className="btn btn-white btn-lg" href={MAILTO}>
@@ -88,7 +88,7 @@ export default function Home() {
           <Reveal>
             <div className="section-head">
               <p className="eyebrow">Services</p>
-              <h2 id="services-heading">Everything a local business needs online</h2>
+              <h2 id="services-heading">Everything you need online</h2>
               <p>
                 One partner for your website, your rankings, your ads, and
                 your IT — no agencies, no hand-offs, no jargon.
@@ -114,7 +114,7 @@ export default function Home() {
               <article className="card card-hover" style={{ background: "var(--blue)", borderColor: "var(--blue)" }}>
                 <h3 style={{ color: "#fff" }}>Not sure where to start?</h3>
                 <p style={{ color: "#d6e7f5" }}>
-                  Tell me what your business needs. I&apos;ll tell you
+                  Tell me what you need. I&apos;ll tell you
                   honestly what will move the needle — and what won&apos;t.
                 </p>
                 <a href={MAILTO} className="card-link" style={{ color: "#fff" }}>
@@ -191,7 +191,7 @@ export default function Home() {
                 <p className="eyebrow">Pricing</p>
                 <h2 id="plans-heading">Priced per project. No lock-in.</h2>
                 <p>
-                  Every business is different, so there&apos;s no one-size
+                  Every project is different, so there&apos;s no one-size
                   price list here. Tell me what you need and I&apos;ll quote
                   a flat project price — or a simple monthly plan for ads and
                   ongoing work.
@@ -217,7 +217,7 @@ export default function Home() {
               <p className="eyebrow">Questions</p>
               <h2 id="faq-heading">Before you ask</h2>
               <p>
-                The things local business owners usually want to know first.
+                The things people usually ask first.
               </p>
             </div>
           </Reveal>
@@ -233,7 +233,7 @@ export default function Home() {
       <section className="cta-band" aria-labelledby="cta-heading">
         <div className="container">
           <div>
-            <h2 id="cta-heading">Let&apos;s talk about your business.</h2>
+            <h2 id="cta-heading">Let&apos;s talk about your project.</h2>
             <p>
               Email {EMAIL} — I reply personally, usually the same day.
             </p>

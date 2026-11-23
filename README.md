@@ -2,7 +2,8 @@
 
 Professional website for Perplexity IT, a one-person company in Salt Lake
 County, UT. Services: web development, SEO, Meta ads, Google ads, IT services,
-AI chatbot, AI phone receptionist.
+email migration, AI chatbot, AI phone receptionist — for businesses and
+individuals worldwide, except on-site IT (Salt Lake County only).
 
 - **Stack:** Next.js 14 (App Router), static export (`output: 'export'`).
 - **Hosting:** Vercel — auto-deploys on every push to `main`.
