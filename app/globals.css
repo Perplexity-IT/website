@@ -1851,3 +1851,69 @@ img {
     opacity: 0.7;
   }
 }
+
+/* ---------- SEO additions: answer-first questions, comparison table, freshness ---------- */
+.service-question {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.author-byline {
+  color: var(--muted);
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+.author-byline a {
+  color: var(--blue-bright);
+  font-weight: 600;
+}
+
+.compare-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15.5px;
+  min-width: 560px;
+}
+
+.compare-table th,
+.compare-table td {
+  text-align: left;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.compare-table thead th {
+  background: var(--black);
+  color: #fff;
+  font-weight: 700;
+}
+
+.compare-table tbody tr:last-child th,
+.compare-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.compare-table tbody th {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.compare-table tbody td:nth-child(2) {
+  background: var(--blue-soft);
+}
+
+.last-updated {
+  color: var(--muted);
+  font-size: 13.5px;
+  margin-top: 24px;
+}

@@ -1,4 +1,52 @@
+# Perplexity IT — robots.txt
+# Everything is crawlable, including AI search and retrieval bots.
+# Sitemap URL switches to https://perplexityit.com/sitemap.xml when DNS moves.
+
 User-agent: *
 Allow: /
 
-Sitemap: https://perplexityit.com/sitemap.xml
+# AI search / retrieval bots — explicitly allowed.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Traditional search crawlers — explicitly allowed.
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+Sitemap: https://website-git-main-perplexity-it.vercel.app/sitemap.xml

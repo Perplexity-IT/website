@@ -43,3 +43,32 @@ npm run build   # static export in out/
   `lib/images.js` and reference them in `components/ProjectCard.jsx`.
 - Scroll-reveal animations are a lightweight IntersectionObserver hook
   (`components/Reveal.jsx`); content stays visible with JS disabled.
+
+## SEO / AI search (added Nov 22, 2026)
+
+- Canonical site URL lives in one place: `SITE_URL` in `lib/site.js`.
+  It is currently the Vercel preview URL because perplexityit.com still
+  points at the old GoDaddy site. **When DNS moves to Vercel**, change
+  `SITE_URL` to `https://perplexityit.com` and update the hardcoded URLs
+  in `public/sitemap.xml`, `public/robots.txt`, and `public/llms.txt`.
+- `public/robots.txt` explicitly allows AI retrieval bots (OAI-SearchBot,
+  GPTBot, ChatGPT-User, ClaudeBot, anthropic-ai, PerplexityBot, and more)
+  plus Googlebot/Bingbot. Nothing is blocked.
+- `public/llms.txt` summarizes the business for LLM agents. Keep it
+  honest — no invented prices, clients, or results.
+- Every page has a canonical tag (via `alternates.canonical` + the
+  `metadataBase` in `app/layout.jsx`). Inner pages carry BreadcrumbList
+  JSON-LD (`components/BreadcrumbJsonLd.jsx`). Layout carries LocalBusiness
+  + Organization JSON-LD; the homepage carries FAQPage JSON-LD generated
+  from `FAQS` in `lib/site.js` (add a question there and the schema
+  follows automatically).
+- Service sections lead with a question heading + a direct answer
+  (answer-first, for AI extraction). The Services page has a
+  "one-person company vs. big agency" comparison table — keep the wording
+  fair and generic, no invented numbers.
+- Footer carries the author byline (Nabin Pokhrel + LinkedIn) and a
+  "Last updated" date. Update that date only when content actually
+  changes — do not fake recency.
+- Still to do (needs Nabin, not a code change): submit the sitemap in
+  Google Search Console + Bing Webmaster Tools; off-site brand mentions
+  (directories, Reddit, YouTube, reviews).

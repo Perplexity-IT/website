@@ -1,18 +1,38 @@
 import { COVER_SRC } from "../../lib/images";
-import { MAILTO } from "../../lib/site";
+import { LINKEDIN, MAILTO } from "../../lib/site";
+import BreadcrumbJsonLd from "../../components/BreadcrumbJsonLd";
 
 export const metadata = {
   title: "About Nabin Pokhrel — Perplexity IT",
   description:
     "Nabin Pokhrel is a systems engineer and builder in Salt Lake City with 7+ years in IT — Microsoft 365, Azure, Entra ID — now building websites and ad campaigns for local businesses.",
+  alternates: { canonical: "/about" },
 };
 
 export default function About() {
   return (
     <div className="container">
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "About Nabin", path: "/about" },
+        ]}
+      />
       <div className="page-head">
         <p className="eyebrow">About</p>
         <h1>Nabin Pokhrel — engineer, builder, one-person company</h1>
+        <p className="author-byline">
+          By Nabin Pokhrel — systems engineer, 7+ years in IT; Microsoft
+          Azure Administrator (AZ-104) and AWS Solutions Architect —
+          Associate.{" "}
+          <a
+            href={LINKEDIN}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Connect on LinkedIn &rarr;
+          </a>
+        </p>
       </div>
 
       <section className="section" style={{ paddingTop: 32 }}>

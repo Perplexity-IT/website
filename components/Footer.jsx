@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { MARK_SRC } from "../lib/images";
-import { EMAIL, SERVICES } from "../lib/site";
+import { EMAIL, LINKEDIN, SERVICES } from "../lib/site";
 
 export default function Footer() {
   return (
@@ -16,8 +16,20 @@ export default function Footer() {
               height={44}
             />
             <p>
-              Perplexity IT — web development, SEO, Meta ads, Google ads, and
-              IT services for businesses in Salt Lake County, Utah.
+              Perplexity IT — web development, SEO, Meta ads, Google ads, AI
+              chatbots, AI phone receptionists, and IT services for
+              businesses in Salt Lake County, Utah.
+            </p>
+            <p>
+              Built and run by{" "}
+              <a
+                href={LINKEDIN}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Nabin Pokhrel
+              </a>
+              , Salt Lake City.
             </p>
           </div>
           <div>
@@ -60,6 +72,7 @@ export default function Footer() {
         </div>
         <div className="footer-bottom">
           <span>© 2026 Perplexity IT. All rights reserved.</span>
+          <span>Last updated: November 22, 2026</span>
           <span>Built in Salt Lake City, Utah.</span>
         </div>
       </div>

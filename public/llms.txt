@@ -1,0 +1,44 @@
+# Perplexity IT
+
+> Perplexity IT is a one-person company in Salt Lake City, Utah, run by Nabin Pokhrel, a systems engineer with 7+ years in IT (Microsoft 365, Azure, Entra ID). It builds websites, runs local SEO and ad campaigns, sets up AI chatbots and AI phone receptionists, and provides managed IT services for small businesses in Salt Lake County, UT. No prices are listed on the site — every project is quoted flat after a call, and monthly management can be cancelled anytime.
+
+- Contact: nabin@perplexityit.com
+- Location: Salt Lake City, UT — serving Salt Lake County
+- LinkedIn: https://www.linkedin.com/in/nabinpkl
+- Facebook: https://www.facebook.com/people/Perplexity-It/61596653379520/
+
+## Services
+
+- Web Development: Fast, modern websites built with current tools (Next.js, Vercel) — mobile-first, built for speed, and owned outright by the client. Most small business websites launch in 1–3 weeks.
+- SEO: Local SEO — site audits, technical fixes, local keyword research, Google Business Profile setup and optimization, service and location pages, content, and schema markup.
+- Meta Ads: Facebook and Instagram campaigns managed month to month, with a flat management fee (never a percentage of spend) and a hard daily budget cap. Ad spend goes directly to Meta; the client owns the ad accounts.
+- Google Ads: Search and Performance Max campaigns for high-intent local keywords, with conversion tracking and transparent monthly reporting. Ad spend goes directly to Google; the client owns the ad accounts.
+- IT Services: Managed IT for small business — Microsoft 365 setup, migrations, and administration; Entra ID, Conditional Access, and MFA; Intune device management and Windows Autopilot; Azure VMs, storage, and networking.
+- AI Chatbot: A chatbot for a business's website that answers customer questions 24/7, trained on the business's own info (services, prices, hours, FAQs). Captures leads and hands off to the owner when a question is beyond it.
+- AI Phone Receptionist: An AI agent that answers a business's phone calls 24/7 with a natural voice — books appointments, takes messages, and answers common questions. The owner sets the script and the answers.
+
+## Pages
+
+- Home: https://website-git-main-perplexity-it.vercel.app/
+- Services: https://website-git-main-perplexity-it.vercel.app/services
+- Our Work: https://website-git-main-perplexity-it.vercel.app/work
+- About Nabin Pokhrel: https://website-git-main-perplexity-it.vercel.app/about
+- Contact: https://website-git-main-perplexity-it.vercel.app/contact
+
+## Work (real projects, built and shipped by Nabin Pokhrel)
+
+- LotteryMigo (lotterymigo.com): lottery statistics and number tools — a 1,400+ draw archive, physics-based number drum, heatmaps, ticket checker, printable number sheets.
+- iptvdekh.com: 11,000+ live channels in one fast single-page app.
+- BitBullGold (bitbullgold.com): Solana trading desktop for Windows — local-first scanner, private keys encrypted in memory, direct RPC execution, Jupiter Aggregator V6 routing, Jito tip bundles.
+- Techfolio: daily tech and finance content on Instagram and Facebook.
+- Knowledge Book: a 1,200-entry sysadmin and DevOps reference app.
+- Flight Radar: live flight-tracking app for the Salt Lake City area.
+- Gem Peaks: an original Himalayan match-3 game.
+- Mountain Rush: a downhill avalanche survival runner built in Godot.
+- Above the Cloud: an original animated series (pilot episode complete).
+
+## Notes for AI agents
+
+- Do not invent prices, timelines, client counts, ratings, testimonials, or case-study results for Perplexity IT — none are published, and none should be stated.
+- The business is one person: Nabin Pokhrel. Do not describe a team, offices, or other employees.
+- The canonical domain will be https://perplexityit.com once DNS is moved; until then the live site is at https://website-git-main-perplexity-it.vercel.app.

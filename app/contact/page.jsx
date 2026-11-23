@@ -1,15 +1,23 @@
 import { EMAIL, MAILTO } from "../../lib/site";
 import ContactForm from "../../components/ContactForm";
+import BreadcrumbJsonLd from "../../components/BreadcrumbJsonLd";
 
 export const metadata = {
   title: "Contact — Perplexity IT",
   description:
     "Contact Perplexity IT in Salt Lake City: email nabin@perplexityit.com to book a call about web development, SEO, Meta ads, Google ads, IT services, an AI chatbot, or an AI phone receptionist.",
+  alternates: { canonical: "/contact" },
 };
 
 export default function Contact() {
   return (
     <div className="container">
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Contact", path: "/contact" },
+        ]}
+      />
       <div className="page-head">
         <p className="eyebrow">Contact</p>
         <h1>Let&apos;s talk</h1>

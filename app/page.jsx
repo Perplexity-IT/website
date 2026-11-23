@@ -11,6 +11,7 @@ export const metadata = {
   title: "Perplexity IT | Websites, SEO, Ads, AI & IT Services in Salt Lake County",
   description:
     "Perplexity IT builds fast websites, runs local SEO and Meta + Google ad campaigns, sets up AI chatbots and AI phone receptionists, and provides managed IT services for businesses in Salt Lake County, Utah.",
+  alternates: { canonical: "/" },
 };
 
 const FEATURED = PROJECTS.slice(0, 6);

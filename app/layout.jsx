@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import StickyCTA from "../components/StickyCTA";
 import ChatWidget from "../components/ChatWidget";
 import { MARK_SRC } from "../lib/images";
+import { FACEBOOK_PAGE, LINKEDIN, SITE_URL } from "../lib/site";
 
 // Self-hosted at build time by next/font — no runtime Google Fonts request.
 const jakarta = Plus_Jakarta_Sans({
@@ -15,7 +16,7 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://perplexityit.com"),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Perplexity IT | Websites, SEO, Ads, AI & IT Services in Salt Lake County",
     template: "%s | Perplexity IT",
@@ -36,7 +37,7 @@ export const metadata = {
     title: "Perplexity IT | Websites, SEO, Ads, AI & IT Services",
     description:
       "Web development, SEO, Meta ads, Google ads, AI chatbot and AI phone receptionist setup, and IT services for Salt Lake County businesses — from Nabin Pokhrel, Salt Lake City.",
-    url: "https://perplexityit.com",
+    url: SITE_URL,
     siteName: "Perplexity IT",
     type: "website",
     locale: "en_US",
@@ -62,7 +63,7 @@ const jsonLd = {
   name: "Perplexity IT",
   description:
     "Web development, SEO, Meta ads, Google ads, AI chatbot and AI phone receptionist setup, and IT services for businesses in Salt Lake County, Utah.",
-  url: "https://perplexityit.com",
+  url: SITE_URL,
   email: "nabin@perplexityit.com",
   areaServed: {
     "@type": "AdministrativeArea",
@@ -88,6 +89,27 @@ const jsonLd = {
   },
 };
 
+// Organization entity for AI search / knowledge graph. No `logo` field:
+// the logo is embedded as a data URI (the GitHub connector cannot push
+// binary files), and a data URI is not a usable logo URL. Add it once a
+// real logo file is hosted.
+const orgJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Perplexity IT",
+  description:
+    "A one-person company in Salt Lake City, UT: web development, SEO, Meta ads, Google ads, IT services, AI chatbots, and AI phone receptionists for small businesses in Salt Lake County.",
+  url: SITE_URL,
+  email: "nabin@perplexityit.com",
+  founder: {
+    "@type": "Person",
+    name: "Nabin Pokhrel",
+    url: LINKEDIN,
+    jobTitle: "Founder, Perplexity IT",
+  },
+  sameAs: [FACEBOOK_PAGE, LINKEDIN],
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={jakarta.variable}>
@@ -104,6 +126,10 @@ export default function RootLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
         />
         <Header />
         <main id="main">{children}</main>
