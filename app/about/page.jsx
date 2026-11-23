@@ -27,9 +27,9 @@ export default function About() {
             </p>
             <p>
               Outside work I build things — lottery tools, a live TV app, a
-              flight radar, games, an animated series. Perplexity IT is
-              where those two sides meet: the discipline of enterprise IT
-              and the speed of someone who ships.
+              trading desktop, a flight radar, games, an animated series.
+              Perplexity IT is where those two sides meet: the discipline of
+              enterprise IT and the speed of someone who ships.
             </p>
             <p>
               When you hire Perplexity IT, you get me — not a sales rep, not
@@ -70,7 +70,7 @@ export default function About() {
           <article className="card">
             <h3>Builder</h3>
             <p>
-              Eight shipped products and counting — web apps, games, and
+              Nine shipped products and counting — web apps, games, and
               content platforms built end to end.
             </p>
           </article>

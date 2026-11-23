@@ -1,9 +1,9 @@
 import { MAILTO } from "../../lib/site";
 
 export const metadata = {
-  title: "Services — Web Development, SEO, Meta Ads, Google Ads, IT Services",
+  title: "Services — Web Development, SEO, Meta Ads, Google Ads, IT Services, AI Chatbot & AI Phone Receptionist",
   description:
-    "Perplexity IT services for Salt Lake County businesses: fast websites, local SEO, Meta and Google ad campaigns, and managed IT services.",
+    "Perplexity IT services for Salt Lake County businesses: fast websites, local SEO, Meta and Google ad campaigns, managed IT services, an AI chatbot for your website, and an AI phone receptionist that answers every call.",
 };
 
 const SERVICES_DETAIL = [
@@ -68,6 +68,32 @@ const SERVICES_DETAIL = [
       "Practical, plain-English support — no ticket black holes",
     ],
   },
+  {
+    id: "ai-chatbot",
+    title: "AI Chatbot",
+    intro:
+      "A chatbot on your website that answers customer questions 24/7 — trained on your own business info, so it gives your answers, not generic ones.",
+    points: [
+      "Trained on your services, prices, hours, and FAQs",
+      "Answers visitors any time — nights, weekends, holidays",
+      "Captures leads: name, phone, and what they need",
+      "Hands off to you whenever a question is beyond it",
+      "Lives on your website — no app for customers to install",
+    ],
+  },
+  {
+    id: "ai-phone-receptionist",
+    title: "AI Phone Receptionist",
+    intro:
+      "An AI agent that answers your business phone with a natural voice, 24/7 — so no call goes unanswered, even when you're busy, closed, or with another customer.",
+    points: [
+      "Answers every call, any time of day",
+      "Books appointments into your calendar",
+      "Takes messages and sends them straight to you",
+      "Answers common questions: hours, location, services, prices",
+      "You set the script and the answers — it only says what you tell it to",
+    ],
+  },
 ];
 
 export default function Services() {
@@ -77,7 +103,7 @@ export default function Services() {
         <p className="eyebrow">Services</p>
         <h1>What we do</h1>
         <p>
-          Five services, one person accountable. Every engagement starts with
+          Seven services, one person accountable. Every engagement starts with
           a conversation — book a call and we&apos;ll scope it together.
         </p>
       </div>

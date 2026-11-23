@@ -9,6 +9,7 @@ import PlanCard from "./PlanCard";
 
 const getCustomers = SERVICES.filter((s) => s.column === "customers");
 const buildSupport = SERVICES.filter((s) => s.column === "support");
+const aiServices = SERVICES.filter((s) => s.column === "ai");
 
 export default function Header() {
   const [megaOpen, setMegaOpen] = useState(false);
@@ -58,7 +59,7 @@ export default function Header() {
               •
             </span>
             <span className="hide-mobile">
-              Websites, SEO, ads &amp; IT — one local partner
+              Websites, SEO, ads, AI &amp; IT — one local partner
             </span>
           </span>
           <span className="util-right">
@@ -181,6 +182,19 @@ export default function Header() {
               <div>
                 <p className="mega-col-label">Build &amp; support</p>
                 {buildSupport.map((s) => (
+                  <Link
+                    key={s.id}
+                    href={`/services#${s.id}`}
+                    className="mega-service"
+                  >
+                    <h3>{s.name}</h3>
+                    <p>{s.short}</p>
+                  </Link>
+                ))}
+              </div>
+              <div>
+                <p className="mega-col-label">AI services</p>
+                {aiServices.map((s) => (
                   <Link
                     key={s.id}
                     href={`/services#${s.id}`}
