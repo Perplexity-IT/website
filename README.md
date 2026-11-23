@@ -7,6 +7,7 @@ County, UT. Services: web development, SEO, Meta ads, Google ads, IT services.
 - **Hosting:** Vercel — auto-deploys on every push to `main`.
 - **Domain:** perplexityit.com (DNS at GoDaddy; email on Microsoft 365 —
   do not touch MX records).
+- **Preview:** https://website-git-main-perplexity-it.vercel.app
 
 ## Develop
 
