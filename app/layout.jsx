@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header";
@@ -136,6 +137,7 @@ export default function RootLayout({ children }) {
         <Footer />
         <StickyCTA />
         <ChatWidget />
+        <Analytics />
       </body>
     </html>
   );
