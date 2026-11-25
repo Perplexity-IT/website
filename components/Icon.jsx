@@ -110,6 +110,12 @@ const PATHS = {
       <path d="M19 15.5l.9 2.6 2.6.9-2.6.9-.9 2.6-.9-2.6-2.6-.9 2.6-.9.9-2.6z" />
     </>
   ),
+  bag: (
+    <>
+      <path d="M6 7h12l1 13.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 20.5L6 7z" />
+      <path d="M9 10V6a3 3 0 0 1 6 0v4" />
+    </>
+  ),
 };
 
 export default function Icon({ name, size = 24, className = "" }) {

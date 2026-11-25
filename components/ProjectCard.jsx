@@ -14,6 +14,7 @@ const VISUALS = {
   cloud: { gradient: "linear-gradient(135deg,#1e1b4b 0%,#6366f1 100%)", icon: "cloud" },
   bull: { gradient: "linear-gradient(135deg,#78350f 0%,#b45309 55%,#f59e0b 100%)", icon: "coins" },
   clean: { gradient: "linear-gradient(135deg,#064e3b 0%,#0d9488 55%,#34d399 100%)", icon: "sparkle" },
+  store: { gradient: "linear-gradient(135deg,#7f1d1d 0%,#dc2626 55%,#fb923c 100%)", icon: "bag" },
 };
 
 export default function ProjectCard({ project }) {
